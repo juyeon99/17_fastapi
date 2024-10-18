@@ -60,7 +60,8 @@ def create_student(db: Session, student: schemas.StudentCreate):
         name = student.name,
         lunch_menu = student.lunch_menu,
         nickname = student.nickname,
-        description = student.description
+        description = student.description,
+        teacher_id = student.teacher_id
     )
     
     db.add(db_student)
